@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Notification from "./components/Notification"; // Requires messages: Array
+import NumberedButtons from "./components/NumberedButtons"; // Requires num: Number
+import StudentCard from "./components/StudentCard"; // Requires student: Shape
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <Notification
+        messages={["Please renew your account", "You have 2 notifications"]}
+      />
+      <NumberedButtons num={5} />
+      <StudentCard
+        student={{
+          name: "Richie Samson",
+          id: 1209,
+          active: true,
+          courses: [
+            "Deep Learning Fundamentals - 2019",
+            "Python - Intermediate"
+          ]
+        }}
+      />
     </div>
   );
-}
+};
 
 export default App;

@@ -20,3 +20,13 @@ Store prop data in state if you need to modify before consumption
 
 Props defaults to true if no value is passed
 Setting default values when props are not set
+
+when you set props using double or single quotes the value will be treated as static string not as dynamic variable
+
+If you wish to pass the data such as numbers, functions, an object then we need to use curly brases {}
+
+Props let you access data from parent components
+
+You can pass strings, Numbers, Objects, Arrays, Functions and more
+
+Props ulimately feed to a component's internal logic
