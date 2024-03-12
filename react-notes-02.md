@@ -19,7 +19,7 @@ But unlike HTML, JSX allows you to use JavaScript expressions directly in the la
 
 State
 
-Components may also include state, which we’ll examine in detail, later in this course. Stateful components describe visual elements with data.
+Components may also include state. Stateful components describe visual elements with data.
 
 As you change and modify this data, the component automatically re-renders to reflect the change. 
 
