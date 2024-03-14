@@ -1,4 +1,5 @@
 The Context API
+
 Implementing React’s top-down data flow architecture using props can often lead to a situation where one has several forwarding props that simply carry data for deeply nested components. Such props must be built across all intermediary components in the hierarchy. 
 
 As the application evolves and more features and components are added, these forwarding props would only increase, leading to logistical and debugging nightmares. This is where a need to share global data with any number of child components without the need to explicitly pass the data through props comes into being. 
